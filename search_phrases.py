@@ -30,7 +30,7 @@ for i in files:
     df_end = DataFrame(s_res)
     df_res.append(df_end)
 done = concat(df_res)
-done.to_excel("res.xlsx", index=False)
+done.to_excel("res.xlsx", index=False) # Здесь можно указать любое название вместо "res"
 print("время", datetime.now() - start_time)
 print("Проверено фраз", count)
 print("Найдено фраз", len(done))
