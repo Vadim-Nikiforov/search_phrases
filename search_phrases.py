@@ -30,13 +30,13 @@ def search(list_of_phrases, state_name):
     for i in files:
         result_search = []
         logs_list = []
-        path = "logs\\" + i
-        print(path)
+        paths = "logs\\" + i
+        print(paths)
         try:
-            df_new = read_excel(path)
+            df_new = read_excel(paths)
             logs_list = list(df_new.values)
         except:
-            print("поврежден файл:", path)
+            print("поврежден файл:", paths)
 
         count += len(logs_list)
 
